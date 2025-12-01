@@ -1,0 +1,35 @@
+<section class="login-page">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Ingresar a SENDIFY</mat-card-title>
+      <mat-card-subtitle>
+        Accede al panel usando tu correo registrado.
+      </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form class="login-form" [formGroup]="form" (ngSubmit)="submit()">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Correo electrónico*</mat-label>
+          <input matInput formControlName="email" type="email" />
+          <button mat-icon-button matSuffix disabled>
+            <mat-icon>mail</mat-icon>
+          </button>
+        </mat-form-field>
+
+        <div class="error" *ngIf="errorMessage">
+          {{ errorMessage }}
+        </div>
+
+        <button mat-raised-button color="primary" class="full-width" type="submit">
+          Entrar al dashboard
+        </button>
+
+        <div class="footer-link">
+          ¿No tienes cuenta?
+          <a (click)="goToCreate()">Crear cuenta</a>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</section>

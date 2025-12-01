@@ -1,0 +1,67 @@
+/* Contenedor global del dashboard */
+.wrap { padding: 16px; background: transparent; }
+
+/* Header */
+.title { display: flex; align-items: center; gap: 12px; color: #eaeaea; margin-bottom: 16px; }
+.title h1 { margin: 0; font-size: 20px; color: #ffffff; }
+.title small { color: #bdbdbd; }
+.spacer { flex: 1; }
+
+/* Títulos de sección */
+.section { color: #cfcfcf; margin: 16px 0 8px; font-size: 16px; font-weight: 600; }
+
+/* Grids */
+.kpi-grid { display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr); }
+.epic-grid { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
+
+/* Contenedor de tabla */
+.box { background: #121212; border-radius: 16px; }
+
+/* Responsivo */
+@media (max-width: 1000px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .kpi-grid, .epic-grid { grid-template-columns: 1fr; } }
+
+/* Botón de logout (icono + texto) */
+.logout-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Footer de la tabla de envíos recientes */
+.recent-shipments-footer {
+  display: flex;
+  justify-content: center;  /* <--- aquí el cambio */
+  margin-top: 8px;
+  width: 100%;
+}
+
+.view-all-btn {
+  padding-inline: 24px;
+}
+.auction-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auction-card .head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auction-text {
+  margin: 0;
+  color: #cfcfcf;
+}
+/* Footer de envíos recientes del dashboard */
+.recent-shipments-footer .mat-mdc-raised-button,
+.recent-shipments-footer .mat-mdc-unelevated-button,
+.recent-shipments-footer button {
+  background-color: transparent !important;
+  color: #f9fafb !important;
+  border-radius: 999px !important;
+  border: 1px solid #4b5563 !important;
+  box-shadow: none !important;
+}

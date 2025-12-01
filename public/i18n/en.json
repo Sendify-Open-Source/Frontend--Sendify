@@ -1,0 +1,155 @@
+{
+  "common": {
+    "back": "Go back",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "search": "Search"
+  },
+  "dashboard": {
+    "title": "SENDIFY Dashboard",
+    "subtitle": "Manage your shipments in one place",
+    "goHome": "Logout",
+    "liveStats": "LIVE STATS",
+    "quickActions": "QUICK ACTIONS",
+    "recentShipments": "RECENT SHIPMENTS",
+    "dashboard.viewAllShipments": "View all",
+    "kpi": {
+      "activeShipments": "Active Shipments",
+      "inTransit": "In Transit",
+      "deliveredToday": "Delivered Today",
+      "pendingAlerts": "Pending Alerts"
+    },
+    "quick": {
+      "create": "Create Shipment",
+      "create.desc": "Register a shipment with full details",
+      "track": "Track Shipment",
+      "track.desc": "Check the status of any shipment",
+      "quote": "Get Rates",
+      "quote.desc": "Compare prices across different couriers",
+      "notifications": "Notifications",
+      "notifications.desc": "Manage alerts & settings"
+    },
+    "viewAllShipments": "View all shipments",
+    "featuresTitle": "What you can do in SENDIFY",
+    "reports": {
+      "title": "What you can do in SENDIFY",
+      "l1": "Create and register domestic shipments",
+      "l2": "Track the status of your packages in real time",
+      "l3": "Compare estimated rates across couriers",
+      "l4": "Review your shipment history"
+    },
+    "auction": {
+      "title": "Shipment auction",
+      "description": "Publish your shipment details and let couriers compete to offer you the best price.",
+      "cta": "Go to auction"
+    }
+
+  },
+  "shipment": {
+    "code": "Code",
+    "client": "Client",
+    "destination": "Destination",
+    "date": "Date",
+    "status": {
+      "title": "Status",
+      "in_transit": "In transit",
+      "delivered": "Delivered",
+      "registered": "Registered",
+      "in_route": "Out for delivery"
+    }
+  },
+  "shipments": {
+    "create": {
+      "title": "Create Shipment",
+      "subtitle": "Register a shipment with full sender and recipient details",
+      "sender": "Sender Details",
+      "receiver": "Recipient Details",
+      "package": "Package Information",
+      "cta": "Create Shipment"
+    }
+  },
+  "pricing": {
+    "quote": {
+      "optimization": {
+        "title": "Cost Optimization",
+        "desc": "Our system automatically compares prices and delivery times to help you choose the best option.",
+        "factors": {
+          "title": "Considered factors:",
+          "f1": "Weight and dimensions",
+          "f2": "Distance between cities",
+          "f3": "Service type"
+        },
+        "benefits": {
+          "title": "Benefits:",
+          "b1": "Average 25% savings",
+          "b2": "Real-time comparison",
+          "b3": "Optimized selection"
+        }
+      },
+      "available": "AVAILABLE SHIPPING OPTIONS",
+      "recommended": "Recommended",
+      "selected": "Selected",
+      "selected.ok": "Courier successfully selected",
+      "proceed": {
+        "cta": "Proceed with this courier",
+        "confirm": "Got it!"
+      },
+      "empty": "Make a quote to see the available options.",
+      "time": {
+        "fast": "1–2 business days",
+        "medium": "2–3 business days",
+        "express": "24 hours",
+        "slow": "3–5 business days"
+      },
+      "tags": {
+        "liveTracking": "Live tracking",
+        "insurance": "Insurance included",
+        "doorDelivery": "Door delivery",
+        "basicTracking": "Basic tracking",
+        "pickupPoint": "Pickup point",
+        "nationalCoverage": "National coverage",
+        "express": "Express",
+        "premiumInsurance": "Premium insurance",
+        "photoProof": "Photo proof",
+        "lowCost": "Low prices",
+        "webTracking": "Web tracking",
+        "localNetwork": "Local network"
+      }
+    }
+  },
+  "tracking": {
+    "title": "Shipment Tracking",
+    "code": "Tracking code",
+    "code.placeholder": "e.g., SND-001",
+    "search": "Search",
+    "progress": "Progress bar",
+    "notFound": "No shipment found with code: {{code}}",
+    "tryAgain": "Try again"
+  },
+
+  "auction": {
+    "title": "Shipment auction",
+    "subtitle": "Fill in your package details and let couriers compete to offer you the best price.",
+    "origin": "Origin",
+    "destination": "Destination",
+    "weightKg": "Weight (kg)",
+    "declaredValue": "Declared value",
+    "length": "Length",
+    "width": "Width",
+    "height": "Height",
+    "description": "Description / contents",
+    "submit": "Publish auction",
+    "offersTitle": "Courier offers",
+    "offersPlaceholder": "Once you publish your auction, the courier proposals will appear here.",
+    "loading": "Publishing your auction...",
+    "lastRequestTitle": "Last published auction",
+    "courierOffersTitle": "Choose a courier for this auction",
+    "noCouriers": "No couriers available right now. Try again later.",
+    "eta": "Estimated delivery: {{days}} days"
+
+
+  }
+
+
+}

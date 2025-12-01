@@ -1,0 +1,78 @@
+<section class="wrap">
+  <header class="title">
+    <a href="https://sendifi.github.io/LandingPage/" target="_self" rel="noopener" aria-label="Ir a la landing">
+      <img src="https://files.catbox.moe/f3pdna.png" alt="SENDIFY" height="24" />
+    </a>
+    <div>
+      <h1>{{ 'dashboard.title' | translate }}</h1>
+      <small>{{ 'dashboard.subtitle' | translate }}</small>
+    </div>
+    <span class="spacer"></span>
+
+
+    <app-language-switcher></app-language-switcher>
+    <button
+      mat-raised-button
+      color="warn"
+      type="button"
+      class="logout-btn ml-2"
+      (click)="onLogout()">
+      <mat-icon>logout</mat-icon>
+      <span>{{ 'dashboard.goHome' | translate }}</span>
+    </button>
+
+  </header>
+
+  <h2 class="section">{{ 'dashboard.liveStats' | translate }}</h2>
+  <div class="kpi-grid">
+    @for (k of store.kpis(); track $index) { <app-kpi-card [kpi]="k" /> }
+  </div>
+
+  <h2 class="section">{{ 'dashboard.quickActions' | translate }}</h2>
+  <app-quick-actions />
+
+  <h2 class="section">{{ 'dashboard.recentShipments' | translate }}</h2>
+  <mat-card class="box"><app-recent-shipments-table [data]="store.recentShipments()" /></mat-card>
+
+  <!-- ... sección de Envíos recientes ... -->
+
+  <div class="recent-shipments-footer">
+    <button
+      mat-raised-button
+      color="primary"
+      routerLink="/shipments"
+      class="view-all-btn">
+      {{ 'dashboard.viewAllShipments' | translate }}
+    </button>
+  </div>
+
+
+  <div class="epic-grid">
+    <!-- Lo que puedes hacer en Sendify -->
+    <app-epic-card icon="insights" [titleKey]="'dashboard.reports.title'"
+                   [lines]="[
+    'dashboard.reports.l1',
+    'dashboard.reports.l2',
+    'dashboard.reports.l3',
+    'dashboard.reports.l4'
+  ]" />
+
+    <!-- Placeholder de la subasta -->
+    <mat-card class="epic auction-card">
+      <div class="head">
+        <mat-icon>gavel</mat-icon>
+        <h3>{{ 'dashboard.auction.title' | translate }}</h3>
+      </div>
+      <p class="auction-text">
+        {{ 'dashboard.auction.description' | translate }}
+      </p>
+      <button
+        mat-raised-button
+        color="accent"
+        type="button"
+        routerLink="/auction">
+        {{ 'dashboard.auction.cta' | translate }}
+      </button>
+    </mat-card>
+  </div>
+</section>
